@@ -1,4 +1,4 @@
-# bh-lesson-3-challenge
+# bh-challenge-4
 This is a challenge that we will continue to work on throughout the class
 you will be graded on checkpoints as we progress. Make sure to follow all of the instructions and to push your changes up to your branch as we will be pulling down from your branch, running tests, and comparing your results.
 
