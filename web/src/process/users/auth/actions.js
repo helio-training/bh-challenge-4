@@ -15,6 +15,7 @@ export function fetch(email, password) {
 
 export function* executeFetchToken({ email, password }) {
   try {
+    // Route to the api, the second one needs to be the body
     const res = yield call('TODO you need to put something here', 'TODO you need to put something here')
     console.log('This is what we got back from the api', res)
     const fetchResults = { }
