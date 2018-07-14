@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 
 import connected from 'State/connect'
 import { selector as UsersState } from 'Process/users/reducer'
+import CSSModules from 'react-css-modules'
 // import Logo from './logo.svg'
+import css from './index.css'
 import UserLinks from './user-dropdown'
 import DefaultLinks from './nav-links'
 
@@ -26,4 +28,4 @@ class Header extends Component {
   }
 }
 
-export default connected([UsersState], [])(Header)
+export default connected([UsersState], [])(CSSModules(Header, css))

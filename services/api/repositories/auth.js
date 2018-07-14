@@ -4,7 +4,7 @@ import PGWrapper from '../../common/utils/pg-wrapper'
 
 export async function login(userHandle) {
   // Complete the query to retrieve the user data based on username
-  const query = sql``
+  const query = sql`select * from passhash where user_handle = ${userHandle};`
 
   const userAuths = await PGWrapper.sqlAndMap(query, (row) => ({
     userHandle: row.user_handle,

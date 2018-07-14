@@ -9,14 +9,17 @@ import Header from 'UI/components/header'
 import connected from 'State/connect'
 
 // 404 Page
-import BadRequest from './bad-request/'
+// import BadRequest from './bad-request/'
+import BadRequest from './bad-request/index.solution'
 
 // Secure Pages
-import landing from './secured/landing'
+// import landing from './secured/landing'
+import landing from './secured/landing/index.solution'
 import pyramid from './secured/challenges/pyramid'
 
 // Unsecured Pages
-import login from './unsecured/login/'
+// import login from './unsecured/login/'
+import login from './unsecured/login/index.solution'
 
 class App extends Component {
   render() {
