@@ -37,7 +37,9 @@
     float: left;
     text-align: left;
   }
- .sub-section-item-email {
+}
+
+.sub-section-item-email {
   composes: sub-section-item;
   flex-grow: 4;
   > * {
@@ -45,6 +47,7 @@
     margin-right: 30px;
     text-align: right;
   }
+}
 
 .sub-section-item-row {
   composes: sub-section-item;
