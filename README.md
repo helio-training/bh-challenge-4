@@ -1,4 +1,4 @@
-# bh-lesson-3-challenge
+# bh-challenge-4
 This is a challenge that we will continue to work on throughout the class
 you will be graded on checkpoints as we progress. Make sure to follow all of the instructions and to push your changes up to your branch as we will be pulling down from your branch, running tests, and comparing your results.
 
@@ -6,6 +6,7 @@ you will be graded on checkpoints as we progress. Make sure to follow all of the
 
 (Login creds for now are ```username - bryce@helio.com  password - 123```)
 1. Look for all of the TODO comments and complete them.
+    - Additionally all pages must have two layouts. One for mobile and one for everything else (use media queries)
 
 ### Fork this project
 1. Add your team members to the repo

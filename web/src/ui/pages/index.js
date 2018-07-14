@@ -1,3 +1,5 @@
+// TODO Challenge 4 Add a route for the string manipulation challenge
+// Place it behind the secured route
 import React, { Component } from 'react'
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
@@ -18,8 +20,8 @@ import landing from './secured/landing/index.solution'
 import pyramid from './secured/challenges/pyramid'
 
 // Unsecured Pages
-// import login from './unsecured/login/'
 import login from './unsecured/login/index.solution'
+import home from './unsecured/homepage/index.solution'
 
 class App extends Component {
   render() {
@@ -30,7 +32,8 @@ class App extends Component {
         </div>
         <div styleName="content-container">
           <Switch>
-            <Route exact path="/" component={login} />,
+            <Route exact path="/" component={home} />,
+            <Route exact path="/login" component={login} />,
             <Route exact path="/landing" component={protectedRoute(landing)} />
             <Route exact path="/challenges" component={protectedRoute(() => {
               <Redirect to={{ pathname: '/landing', state: { from: this.props.location } }} />

@@ -9,7 +9,7 @@ class Homepage extends Component {
   render() {
     return (
       <div>
-        Homepage here!!!!!k
+        Homepage here!!!!!
       </div>
     )
   }

@@ -1,10 +1,10 @@
 // TODO Challenge 4 replace the logo with your own
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import CSSModules from 'react-css-modules'
 
 import connected from 'State/connect'
 import { selector as UsersState } from 'Process/users/reducer'
-import CSSModules from 'react-css-modules'
 // import Logo from './logo.svg'
 import css from './index.css'
 import UserLinks from './user-dropdown'
