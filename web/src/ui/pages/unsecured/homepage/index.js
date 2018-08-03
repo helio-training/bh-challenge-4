@@ -4,8 +4,15 @@
 // But you have to design/build the modal yourself...you can't use anyone else's modal
 
 import React, { Component } from 'react'
+import * as homepageActions from './actions'
+import connected from 'State/connect'
+import { selector as HomepageState } from './reducer'
 
 class Homepage extends Component {
+
+  componentDidMount() {
+    this.props.homepageActions.fetch()
+  }
   render() {
     return (
       <div>
@@ -15,4 +22,4 @@ class Homepage extends Component {
   }
 }
 
-export default Homepage
+export default connected([HomepageState], [homepageActions])(Homepage)
