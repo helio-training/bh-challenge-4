@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
 
 // import * as process from './process'
@@ -12,7 +12,13 @@ class BadRequest extends Component {
   // and something that is using animation
   render() {
     return (
-      <span>TODO delete me</span>
+      <div>
+        <h1>400 - Bad Request - The page is not available</h1>
+        <img src={require('./sadFace.png')} styleName="sadFace" alt="sad" />
+        <p>
+          <Link to="Login">Login Page</Link>
+        </p>
+      </div>
     )
   }
 }

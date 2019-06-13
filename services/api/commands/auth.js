@@ -1,8 +1,9 @@
 // TODO Challenge 4 complete the command (business logic below)
-// import { login } from '../repositories/auth'
-// import { fetchUserByEmail } from '../repositories/user'
+import { login } from '../repositories/auth'
+import { fetchUserByEmail } from '../repositories/user'
 
 export async function authinticateLogin(email, password) {
+
   // Double check that the user provided you with an email and password...if not throw an error
 
   // Get the user info from the db from the provided email
